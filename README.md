@@ -25,6 +25,15 @@ make matrix    # 深度 4/16/64 × 位宽 8/32，共 6 档
 - `scripts/syn.ys`：单档 Yosys 综合脚本。
 - `scripts/run_matrix.sh`：六档综合矩阵与汇总。
 
+## 文档与学习路线
+
+- [START-HERE.md](START-HERE.md)：从环境准备到三个 `PASS` 的最短上手路径，以及第一次改参数的建议。
+- [docs/01-spec.md](docs/01-spec.md)：端口、参数和读写/复位行为契约，明确哪些功能有意不提供。
+- [docs/02-design.md](docs/02-design.md)：核心设计深讲，逐步推导格雷码、多一位指针、满空判定与两级同步。
+- [docs/03-testbench.md](docs/03-testbench.md)：四阶段主回归、自检参考模型，以及 overflow 与 reset skew 的证据解读。
+- [docs/04-synthesis.md](docs/04-synthesis.md)：Yosys 命令、七组实测数据、面积与拓扑路径趋势，以及通用流程的时序边界。
+- [docs/05-troubleshooting.md](docs/05-troubleshooting.md)：工具安装、满空误用、复位、参数与 GTKWave 波形的分类排错。
+
 ## 许可
 
 MIT，见 `LICENSE`。
