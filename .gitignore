@@ -1,0 +1,7 @@
+*.vvp
+*.vcd
+build/
+*.blif
+*.json
+*.edif
+.DS_Store

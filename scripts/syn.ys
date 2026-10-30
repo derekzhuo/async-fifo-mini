@@ -1,0 +1,5 @@
+read_verilog rtl/async_fifo.v
+hierarchy -top async_fifo
+synth -top async_fifo
+stat
+sta
